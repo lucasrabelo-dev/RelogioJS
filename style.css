@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background: url("img/azulBebe.jpg") center / cover no-repeat fixed;
+}
+
+/* CAIXA PRINCIPAL */
+#back {
+    width: 450px;
+    max-width: 100%;
+    padding: 35px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 2px solid #e3d9ff;
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(43, 65, 191, 0.2);
+}
+
+/* TÍTULO */
+#back h1 {
+    margin-bottom: 25px;
+
+    color: #b8e1f8;
+    font-size: 30px;
+}
+
+/* LABELS */
+#back label {
+    display: block;
+
+    margin: 16px 0 7px;
+
+    color: #566d7d; /* titulo dos ngc*/
+
+    font-size: 15px;
+    font-weight: bold;
+
+    text-align: left;
+}
+
+/* GRUPO DE CAMPOS */
+.campos {
+    display: flex;
+    gap: 8px;
+}
+
+/* CAMPOS */
+#back input[type="text"] {
+    width: 100%;
+    padding: 12px 10px;
+
+    border: 2px solid #cdeefa;
+    border-radius: 12px;
+
+    background-color: #f9fdff;
+
+    color: #5d4772;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center;
+
+    outline: none;
+}
+
+/* CAMPOS DESABILITADOS */
+#back input[type="text"]:disabled {
+    opacity: 1;
+    cursor: default;
+}
+
+/* DESTAQUE DOS CAMPOS */
+#back input[type="text"]:focus {
+    border-color: #a5cbf7;
+
+    box-shadow: 0 0 8px rgba(169, 139, 232, 0.3);
+}
+
+/* BOTÕES */
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+/* BOTÕES */
+.caixa {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* BOTÃO EXIBIR */
+.botoes input[type="button"] {
+    background-color: #8b8de8;
+    color: white;
+}
+
+.botoes input[type="button"]:hover {
+    background-color: #8061c8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(91, 43, 191, 0.25);
+}
+
+/* BOTÃO PARAR */
+.botoes input[type="reset"] {
+    background-color: #dff5ff;
+    color: #587184;
+}
+
+.botoes input[type="reset"]:hover {
+    background-color: #c6ebfa;
+
+    transform: translateY(-2px);
+}
+
+/* STATUS */
+#status {
+    margin-top: 20px;
+
+    color: #7661a8;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* CELULAR */
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+        background-attachment: scroll;
+    }
+
+    #back {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    #back h1 {
+        font-size: 24px;
+    }
+
+    .campos {
+        gap: 5px;
+    }
+
+    #back input[type="text"] {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .caixa {
+        width: 100%;
+    }
+}

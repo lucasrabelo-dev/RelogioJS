@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Relógio</title>
+</head>
+
+<body>
+
+    <form name="meuForm">
+
+        <div id="back">
+
+            <h1>RELÓGIO</h1>
+
+            <label>DATA ATUAL:</label>
+
+            <div class="campos">
+                <input type="text" id="dia" disabled placeholder="Dia">
+                <input type="text" id="mes" disabled placeholder="Mês">
+                <input type="text" id="ano" disabled placeholder="Ano">
+            </div>
+
+            <label>MÊS:</label>
+            <input type="text" id="nomeMes" disabled placeholder="Mês">
+
+            <label>HORA ATUAL:</label>
+
+            <div class="campos">
+                <input type="text" id="hora" disabled placeholder="Hora">
+                <input type="text" id="minuto" disabled placeholder="Minutos">
+                <input type="text" id="segundo" disabled placeholder="Segundos">
+            </div>
+
+            <label>DIA DA SEMANA:</label>
+            <input type="text" id="diaSemana" disabled placeholder="Dia da semana">
+
+            <div class="botoes">
+                <input
+                    type="button"
+                    value="▶ Exibir"
+                    onclick="iniciarRelogio()"
+                    class="caixa"
+                >
+
+                <input
+                    type="reset"
+                    value="■ Parar relógio"
+                    onclick="pararRelogio()"
+                    class="caixa"
+                >
+            </div>
+
+            <p id="status">♡ Relógio parado ♡</p>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
