@@ -29,7 +29,13 @@
             </div>
 
             <label>MÊS:</label>
-            <input type="text" id="nomeMes" disabled placeholder="Mês">
+
+            <input
+                type="text"
+                id="nomeMes"
+                disabled
+                placeholder="Mês"
+            >
 
             <label>HORA ATUAL:</label>
 
@@ -40,22 +46,37 @@
             </div>
 
             <label>DIA DA SEMANA:</label>
-            <input type="text" id="diaSemana" disabled placeholder="Dia da semana">
+
+            <input
+                type="text"
+                id="diaSemana"
+                disabled
+                placeholder="Dia da semana"
+            >
 
             <div class="botoes">
+
                 <input
                     type="button"
                     value="▶ Exibir"
                     onclick="iniciarRelogio()"
-                    class="caixa"
+                    class="caixa exibir"
                 >
 
                 <input
-                    type="reset"
-                    value="■ Parar relógio"
-                    onclick="pararRelogio()"
-                    class="caixa"
+                    type="button"
+                    value="Ⅱ Pausar"
+                    onclick="pausarRelogio()"
+                    class="caixa pausar"
                 >
+
+                <input
+                    type="button"
+                    value="✕ Limpar"
+                    onclick="limparRelogio()"
+                    class="caixa limpar"
+                >
+
             </div>
 
             <p id="status">♡ Relógio parado ♡</p>
@@ -65,4 +86,5 @@
     </form>
 
 </body>
+
 </html>

@@ -18,7 +18,11 @@ body {
     background: url("img/azulBebe.jpg") center / cover no-repeat fixed;
 }
 
-/* CAIXA PRINCIPAL */
+
+/*
+   CAIXA PRINCIPAL
+ */
+
 #back {
     width: 450px;
     max-width: 100%;
@@ -34,21 +38,30 @@ body {
     box-shadow: 0 10px 30px rgba(43, 65, 191, 0.2);
 }
 
-/* TÍTULO */
+
+/* 
+   TÍTULO
+ */
+
 #back h1 {
     margin-bottom: 25px;
 
     color: #b8e1f8;
+
     font-size: 30px;
 }
 
-/* LABELS */
+
+/* 
+   LABELS
+ */
+
 #back label {
     display: block;
 
     margin: 16px 0 7px;
 
-    color: #566d7d; /* titulo dos ngc*/
+    color: #566d7d;
 
     font-size: 15px;
     font-weight: bold;
@@ -56,15 +69,24 @@ body {
     text-align: left;
 }
 
-/* GRUPO DE CAMPOS */
+
+/* 
+   GRUPO DE CAMPOS
+ */
+
 .campos {
     display: flex;
     gap: 8px;
 }
 
-/* CAMPOS */
+
+/* 
+   CAMPOS
+ */
+
 #back input[type="text"] {
     width: 100%;
+
     padding: 12px 10px;
 
     border: 2px solid #cdeefa;
@@ -82,36 +104,51 @@ body {
     outline: none;
 }
 
-/* CAMPOS DESABILITADOS */
+
+/* 
+   CAMPOS DESABILITADOS
+ */
+
 #back input[type="text"]:disabled {
     opacity: 1;
+
     cursor: default;
 }
 
-/* DESTAQUE DOS CAMPOS */
+
+/* 
+   DESTAQUE DOS CAMPOS
+ */
+
 #back input[type="text"]:focus {
     border-color: #a5cbf7;
 
     box-shadow: 0 0 8px rgba(169, 139, 232, 0.3);
 }
 
-/* BOTÕES */
+
+/* 
+   BOTÕES
+ */
+
 .botoes {
     display: flex;
+
     justify-content: center;
+
     gap: 10px;
 
     margin-top: 25px;
 }
 
-/* BOTÕES */
+
 .caixa {
-    padding: 12px 20px;
+    padding: 12px 18px;
 
     border: none;
     border-radius: 12px;
 
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 
     cursor: pointer;
@@ -119,13 +156,18 @@ body {
     transition: 0.3s ease;
 }
 
-/* BOTÃO EXIBIR */
-.botoes input[type="button"] {
+
+/* 
+   BOTÃO EXIBIR
+ */
+
+.exibir {
     background-color: #8b8de8;
+
     color: white;
 }
 
-.botoes input[type="button"]:hover {
+.exibir:hover {
     background-color: #8061c8;
 
     transform: translateY(-2px);
@@ -133,19 +175,49 @@ body {
     box-shadow: 0 5px 12px rgba(91, 43, 191, 0.25);
 }
 
-/* BOTÃO PARAR */
-.botoes input[type="reset"] {
+
+/* 
+   BOTÃO PAUSAR
+ */
+
+.pausar {
+    background-color: #fff0c9;
+
+    color: #80652c;
+}
+
+.pausar:hover {
+    background-color: #ffe4a3;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(191, 151, 43, 0.20);
+}
+
+
+/* 
+   BOTÃO LIMPAR
+ */
+
+.limpar {
     background-color: #dff5ff;
+
     color: #587184;
 }
 
-.botoes input[type="reset"]:hover {
+.limpar:hover {
     background-color: #c6ebfa;
 
     transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(43, 151, 191, 0.20);
 }
 
-/* STATUS */
+
+/* 
+   STATUS
+ */
+
 #status {
     margin-top: 20px;
 
@@ -155,16 +227,22 @@ body {
     font-weight: bold;
 }
 
-/* CELULAR */
+
+/* 
+   CELULAR
+ */
+
 @media (max-width: 500px) {
 
     body {
         padding: 15px;
+
         background-attachment: scroll;
     }
 
     #back {
         padding: 25px 20px;
+
         border-radius: 20px;
     }
 
@@ -178,6 +256,7 @@ body {
 
     #back input[type="text"] {
         padding: 10px 5px;
+
         font-size: 14px;
     }
 
